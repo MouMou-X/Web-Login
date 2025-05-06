@@ -1,0 +1,54 @@
+body{
+    font-family: Roboto;
+    background-color: #e76f51;
+    display: flex;
+    align-items: center; /*垂直居中，控制子元素**在交叉轴（默认是垂直方向）**上的对齐方式*/
+    justify-content: center;/*水平居中 控制子元素**在主轴（默认是水平方向）**上的对齐方式*/
+}
+
+.login{
+    background-color: #0b132b;
+    width: 400px;
+    color: white;
+    padding: 40px ;
+    box-shadow: 10px 10px 25px #00000080;/*水平阴影；垂直阴影；模糊半径*/
+    text-align: center;/*文字居中*/
+}
+.login input{
+    display: block;/*块级元素会自动占据其父容器的整整一行，即便内容很短*/
+    margin: 20px auto;/*margin 是 CSS 中用于设置元素 外边距（即元素与其他元素之间的距离） 上，左右，下 */
+    text-align: center;/*文字居中*/
+    background: none;/*去除背景颜色*/
+    padding: 12px;
+    font-size: 15px;/*文字大小*/
+    border-radius: 20px;/*倒圆角*/
+    outline: none;/*去除边线*/
+    color: white;
+}
+/*
+margin: 20px;               四个方向都设置为 20px 
+margin: 10px 20px;         上下 10px，左右 20px
+margin: 10px 20px 30px;    上 10px，左右 20px，下 30px
+margin: 10px 20px 30px 40px;  上右下左，顺时针方向 
+*/
+.login input[type="text"],.login input[type="password"]{
+    border: 2px solid #3498db;
+    width: 220px;
+}
+/*按钮样式*/
+.login input[type="submit"]{
+    width: 150px;
+    border: 2px solid #2ecc71;
+    cursor: pointer;/*按钮样式点击符合*/
+}
+/*输入框动画*/
+.login input[type="text"]:focus,.login input[type="password"]:focus{
+    border-color: #2ecc71;
+    width: 280px;
+    transition: 0.5s;/*动画时间*/
+}
+
+.login input[type="submit"]:hover{
+    background-color: #2ecc71;
+    transition: 0.5s;
+}
