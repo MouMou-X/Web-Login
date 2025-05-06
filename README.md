@@ -2,7 +2,12 @@
 # Simple HTML & CSS Login Page
 
 This is a beginner-friendly project that demonstrates how to create a clean and responsive login page using **HTML** and **CSS** only.
+<<<<<<< HEAD
 ![examp](screenshot/style.png)
+=======
+
+![screenshot/style.png]
+>>>>>>> 368661fe4c3e20a0816ff144758814e3420ab791
 ## 🌟 Features
 
 - Simple and semantic HTML layout
